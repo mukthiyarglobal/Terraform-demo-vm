@@ -28,16 +28,16 @@ variable "nsg_name" {
   type        = string
 }
 
-# variable "nsg_rule_name" {
-#   description = "Name of the NSG rule"
-#   type        = string
-# }
+variable "nsg_rule_name" {
+  description = "Name of the NSG rule"
+  type        = string
+}
 
-# variable "destination_port_range" {
-#   description = "Destination port range for the NSG rule"
-#   type        = string
-#   default     = "22"
-# }
+variable "destination_port_range" {
+  description = "Destination port range for the NSG rule"
+  type        = string
+  default     = "22"
+}
 
 variable "network_interface_name" {
   description = "Name of the Azure Network Interface"
